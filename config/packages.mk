@@ -31,6 +31,20 @@ PRODUCT_PACKAGES += \
     YellowPage \
     GamingMode
 
+# Android 12 adaptive icon shapes. ThemePicker discovers these by overlay category.
+PRODUCT_PACKAGES += \
+    IconShapePebbleOverlay \
+    IconShapeRoundedRectOverlay \
+    IconShapeSquareOverlay \
+    IconShapeSquircleOverlay \
+    IconShapeTaperedRectOverlay \
+    IconShapeTeardropOverlay \
+    IconShapeVesselOverlay
+
+# Standalone dark-theme overlay controlled per user by Settings and SystemUI.
+PRODUCT_PACKAGES += \
+    LineageBlackTheme
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
