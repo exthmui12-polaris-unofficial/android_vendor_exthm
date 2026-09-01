@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
     Seedvault
 endif
 
+# OTA updater
+PRODUCT_PACKAGES += \
+    Updater
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
