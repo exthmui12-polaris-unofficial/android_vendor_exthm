@@ -45,6 +45,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageBlackTheme
 
+# Seedvault is the Android backup transport for Vanilla builds only.
+ifneq ($(EXTHM_GAPPS),true)
+PRODUCT_PACKAGES += \
+    Seedvault
+endif
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet

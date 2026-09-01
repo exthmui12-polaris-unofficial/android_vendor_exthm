@@ -18,11 +18,21 @@ include vendor/exthm/config/version.mk
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/exthm/overlay/common
 
+ifeq ($(EXTHM_GAPPS),true)
+EXTHM_BACKUP_OVERLAY := vendor/exthm/overlay/gapps
+else
+EXTHM_BACKUP_OVERLAY := vendor/exthm/overlay/seedvault
+endif
+
+PRODUCT_PACKAGE_OVERLAYS += \
+    $(EXTHM_BACKUP_OVERLAY)
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/exthm/overlay/themes/exthmIcons
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/exthm/overlay/common
+    vendor/exthm/overlay/common \
+    $(EXTHM_BACKUP_OVERLAY)
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
