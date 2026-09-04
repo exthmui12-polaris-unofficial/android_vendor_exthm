@@ -26,8 +26,6 @@ PRODUCT_PACKAGES += \
     Stk \
     ThemePicker \
     ExthmThemesStub \
-    OmniJaws \
-    WeatherIcons \
     YellowPage \
     GamingMode
 
