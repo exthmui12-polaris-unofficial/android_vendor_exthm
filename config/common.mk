@@ -53,6 +53,13 @@ PRODUCT_COPY_FILES += \
     vendor/exthm/prebuilt/common/etc/init/init.exthm-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.exthm-updater.rc \
     vendor/exthm/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
+ifneq ($(EXTHM_GAPPS),true)
+PRODUCT_COPY_FILES += \
+    vendor/exthm/prebuilt/common/etc/microg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/microg.xml \
+    vendor/exthm/config/permissions/default-permissions-location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions-location.xml \
+    vendor/exthm/config/permissions/privapp-permissions-location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-location.xml
+endif
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/exthm/build/tools/backuptool.sh:install/bin/backuptool.sh \

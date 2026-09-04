@@ -48,7 +48,9 @@ PRODUCT_PACKAGES += \
 # Seedvault is the Android backup transport for Vanilla builds only.
 ifneq ($(EXTHM_GAPPS),true)
 PRODUCT_PACKAGES += \
-    Seedvault
+    Seedvault \
+    UnifiedNlp \
+    IchnaeaNlpBackend
 endif
 
 # OTA updater
