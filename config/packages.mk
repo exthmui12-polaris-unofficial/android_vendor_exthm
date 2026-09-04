@@ -45,12 +45,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageBlackTheme
 
+# UnifiedNlp is the system network-location fallback when a GMS provider is absent.
+PRODUCT_PACKAGES += \
+    UnifiedNlp \
+    IchnaeaNlpBackend
+
 # Seedvault is the Android backup transport for Vanilla builds only.
 ifneq ($(EXTHM_GAPPS),true)
 PRODUCT_PACKAGES += \
-    Seedvault \
-    UnifiedNlp \
-    IchnaeaNlpBackend
+    Seedvault
 endif
 
 # OTA updater
