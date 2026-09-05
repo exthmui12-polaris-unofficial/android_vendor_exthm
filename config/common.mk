@@ -19,6 +19,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/exthm/overlay/common
 
 ifeq ($(EXTHM_GAPPS),true)
+include vendor/exthm/config/gapps.mk
 EXTHM_BACKUP_OVERLAY := vendor/exthm/overlay/gapps
 else
 EXTHM_BACKUP_OVERLAY := vendor/exthm/overlay/seedvault

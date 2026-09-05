@@ -136,6 +136,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.exthmui.build.version=V$(EXTHM_BUILD_VERSION) \
   ro.exthmui.build.date=$(EXTHM_BUILD_DATE) \
   ro.exthmui.build.type=$(EXTHM_COMPILERTYPE) \
+  ro.exthm.has.gapps=$(EXTHM_HAS_GAPPS) \
   ro.exthmui.has.gapps=$(EXTHM_HAS_GAPPS) \
   ro.exthm.version=$(EXTHM_VERSION) \
   ro.exthm.releasetype=$(EXTHM_COMPILERTYPE) \

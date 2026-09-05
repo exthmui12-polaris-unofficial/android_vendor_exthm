@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <hidden-api-whitelisted-app package="com.google.android.gms" />
+    <hidden-api-whitelisted-app package="com.google.android.gsf" />
+    <hidden-api-whitelisted-app package="com.google.android.onetimeinitializer" />
+    <hidden-api-whitelisted-app package="com.google.android.setupwizard" />
+    <hidden-api-whitelisted-app package="com.android.vending" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.restore" />
+</config>
